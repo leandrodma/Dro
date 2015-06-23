@@ -13,11 +13,14 @@ html,
 body {
   font-family: 'Lato', sans-serif;
   color: #666;
-  background-color: whitesmoke;
+  background-color: $lightgreen;
 }
 
 /* Override Bootstrap */
 
+p {
+  font-weight: lighter;
+}
 
 .navbar{
 

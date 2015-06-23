@@ -1,0 +1,71 @@
+#blog {
+  color: $blue;
+  .title {
+    background: url('../images/blog/topo.jpg') no-repeat center center;
+    height: 450px;
+    position: relative;
+    .opacity {
+      opacity: 0.3;
+      background-color: $brown;
+      height: 100%;
+    }
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: $white;
+      font-size: 160px;
+      margin-top: -88px;
+      margin-left: -154px;
+    }
+  }
+  .post {
+    margin-top: 30px;
+    &:nth-child(even) {
+      .img-opacity {
+        background-color: $brown;
+      }
+    }
+    &:nth-child(odd) {
+      .img-opacity {
+        background-color: $blue;
+      }
+    }
+    .img-opacity {
+      opacity: 0.5;
+    }
+  }
+  .post-img {
+    position: relative;
+    &>div {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+    }
+  }
+  .img-title {
+    text-align: center;
+    h2 {
+      font-size: 42px;
+      color: $white;
+      padding: 20% 0;
+    }
+  }
+  .img-info {
+    img {
+      position: absolute;
+      right: 0;
+      margin: 20px;
+    }
+  }
+  h3 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 18px;
+  }
+  hr {
+    border-top: 1px solid $blue;
+  }
+}
