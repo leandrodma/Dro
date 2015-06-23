@@ -2,6 +2,7 @@
 @import 'variables.scss';
 @import 'fonts.scss';
 @import '../vendor/bootstrap/stylesheets/bootstrap.scss';
+@import "blog.scss";
 
 html,
   body {
@@ -10,7 +11,7 @@ html,
 }
 
 body {
-  font-family: "Montserrats","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #666;
   background-color: whitesmoke;
 }
@@ -21,7 +22,7 @@ body {
 .navbar{
 
   &>div:last-child{
-    .make-pull-right;
+    //.make-pull-right;
   }
 
   .navbar-inverse{
