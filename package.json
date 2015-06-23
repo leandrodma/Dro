@@ -18,7 +18,9 @@
     "gulp-notify": "^2.2.0"
   },
   "devDependencies": {
-    "gulp": "^3.8.11"
+    "gulp": "^3.8.11",
+    "gulp-bower": "0.0.10",
+    "gulp-sass": "^1.3.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,7 +30,7 @@
     "url": "https://github.com/leandrodma/drom.git"
   },
   "keywords": [
-    "Okena"
+    ""
   ],
   "author": "",
   "license": "ISC",

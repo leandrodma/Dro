@@ -1,3 +1,4 @@
+
 var gulp =        require('gulp');
 var gutil =       require('gulp-util');
 var concat =      require('gulp-concat');
@@ -10,15 +11,16 @@ var sass =        require('gulp-sass');
 var jshint =      require('gulp-jshint');
 var uglify =      require('gulp-uglify');
 
-gulp.task('default',['sass','javascript', 'watch', 'connectOnDev']);
+gulp.task('default',['sass','bootstrap','javascript', 'watch', 'connectOnDev']);
 
 // Task para assistir mudanças em arquivos
 gulp.task('watch', function(){
   gulp.watch('app/*.html',function(){
-    gulp.src('app/*.html')
+    gulp.src('app/index.html')
     .pipe(connect.reload());
   });
-  gulp.watch(['app/src/scss/**/*.scss'],['sass']);
+  gulp.watch(['app/src/scss/**/*.scss'],['sass', 'bootstrap']);
+  gulp.watch(['app/src/vendor/bootstrap/**/*.scss'],['bootstrap']);
   gulp.watch('app/src/scripts/*.js',['javascript']);
 });
 
@@ -37,11 +39,27 @@ gulp.task('sass', function(){
         .pipe(connect.reload());
 });
 
+// Task para compilar o boostrap
+
+gulp.task('bootstrap', function(){
+    gulp.src('app/src/vendor/bootstrap/stylesheets/bootstrap.scss')
+        .pipe(sass())
+        .on("error", notify.onError(function (error) {
+          return "Erro ao compilar o Bootstrap: " + error.message;
+        }))
+        .pipe(concat('bootstrap.min.css'))
+        .pipe(minifyCss())
+        .pipe(gulp.dest('app/public/vendor/bootstrap/css'))
+        .pipe(connect.reload());
+});
+
+
 // Task que verifica erros, compila e minifica o JavaScript
 gulp.task('javascript', function(){
   gulp.src('app/src/scripts/*.js')
   .pipe(sourcemaps.init())
   .pipe(notify(function (file) {
+
       if (file.jshint.success) {
         return 'Scripts validados e comprimidos.'; //Don't show something if success
       }

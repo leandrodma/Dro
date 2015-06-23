@@ -1,17 +1,32 @@
-  @import '_reset.scss';
-  @import '_fonts.scss';
-  @import '_mixins.scss';
-  @import '_variables.scss';
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'fonts.scss';
+@import '../vendor/bootstrap/stylesheets/bootstrap.scss';
 
- body {
-  width: 100%;
-  height: 100%;
-  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+html,
+  body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+  font-family: "Montserrats","Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #666;
   background-color: whitesmoke;
 }
 
-html {
-    width: 100%;
-    height: 100%;
+/* Override Bootstrap */
+
+
+.navbar{
+
+  &>div:last-child{
+    .make-pull-right;
+  }
+
+  .navbar-inverse{
+    &>div:first-child{
+      @include container-fixed;
+    }
+  }
 }
