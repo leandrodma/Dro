@@ -62,10 +62,25 @@
   h3 {
     font-size: 22px;
   }
-  p {
-    font-size: 18px;
-  }
   hr {
     border-top: 1px solid $blue;
+  }
+}
+
+#post-blog {
+  .img-banner {
+    background: url('../images/blog/posts/topo.jpg') no-repeat center center;
+    height: 630px;
+  }
+  .post {
+    margin-bottom: 40px;
+  }
+  .post-title {
+    background-color: $yellow;
+    color: $blue;
+    text-align: center;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    padding: 0 0 10px;
   }
 }
