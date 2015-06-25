@@ -11,7 +11,7 @@ var sass =        require('gulp-sass');
 var jshint =      require('gulp-jshint');
 var uglify =      require('gulp-uglify');
 
-gulp.task('default',['sass','bootstrap','javascript', 'watch', 'connectOnDev']);
+gulp.task('default',['sass','javascript', 'watch', 'connectOnDev']);
 
 // Task para assistir mudanças em arquivos
 gulp.task('watch', function(){
@@ -19,7 +19,7 @@ gulp.task('watch', function(){
     gulp.src('app/index.html')
     .pipe(connect.reload());
   });
-  gulp.watch(['app/src/scss/**/*.scss'],['sass', 'bootstrap']);
+  gulp.watch(['app/src/scss/**/*.scss'],['sass']);
   gulp.watch(['app/src/vendor/bootstrap/**/*.scss'],['bootstrap']);
   gulp.watch('app/src/scripts/*.js',['javascript']);
 });

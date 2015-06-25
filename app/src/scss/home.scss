@@ -1,0 +1,36 @@
+
+main#home{
+  .carousel{
+    .carousel-control > span{
+      position: absolute;
+      top: 50%;
+    }
+
+    .carousel-caption{
+      position: absolute;
+      top: 30%;
+      left: 30%;
+      right: 30%;
+      bottom: 30%;
+
+      background-color: $blue;
+      opacity: 0.9;
+      border: 1px $blue solid;
+      padding-bottom: 0;
+      color: white !important;
+
+      h1{
+        font-weight: bold;
+        font-size: 3vw;
+        padding: 0;
+        line-height: 0px;
+      }
+
+      p{
+        color: #FFF;
+        font-size: 5vw;
+      }
+
+    }
+  }
+}

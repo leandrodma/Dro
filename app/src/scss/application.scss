@@ -1,40 +1,98 @@
 @import 'reset.scss';
 @import 'variables.scss';
+/* @import '../vendor/bootstrap/stylesheets/bootstrap.scss'; */
 @import 'fonts.scss';
-@import '../vendor/bootstrap/stylesheets/bootstrap.scss';
+@import 'home.scss';
 @import "blog.scss";
 @import "quem-somos.scss";
 
 html,
-  body {
-    width: 100%;
-    height: 100%;
-}
-
 body {
   font-family: 'Lato', sans-serif;
   color: #666;
   background-color: $lightgreen;
+  width: 100%;
+  height: 100%;
+
+  p{
+    font-weight: lighter;
+    color: $blue;
+    font-size: 18px;
+    margin: 0 0 20px;
+  }
+
 }
 
 /* Override Bootstrap */
-
-p {
-  font-weight: lighter;
-  color: $blue;
-  font-size: 18px;
-  margin: 0 0 20px;
-}
-
 .navbar{
-
-  &>div:last-child{
-    //.make-pull-right;
+  .navbar-header{
+    height: 100px;
+    padding-left:10%;
   }
 
-  .navbar-inverse{
-    &>div:first-child{
-      @include container-fixed;
+  &.navbar-inverse{
+    background-color: $brown;
+    font-size: $font-size-menu;
+    margin-bottom: 0 !important;
+
+    .navbar-toggle{
+      margin-top: 30px;
+    }
+
+    .navbar-nav>li>a{
+      color: darken(white, 10%);
     }
   }
+
+  ul:not(#social){
+    padding-top: 20px;
+    color: white;
+  }
+
+
+  & > #navbar{
+    div:first-child{
+      margin-left: 10%;
+    }
+    div:last-child{
+      float: right!important;
+      margin-right: 10%;
+    }
+  }
+
+  .fa{
+    font-size: $font-size-menu-icons;
+  }
+
+  #cart{
+    ul>li{
+      font-weight: lighter;
+      a{
+        padding-bottom: 0 !important;
+      }
+    }
+  }
+
+  #social{
+    span{
+      color: $brown;
+      background-color: white;
+      height: 40px;
+      width: 40px;
+      padding: 5px 0;
+      text-align: center;
+    }
+    li{
+      a{
+        margin-top: 20px;
+        padding: 10px 5px 0 !important;
+      }
+    }
+
+  }
+
+  div:last-child{
+
+  }
+
 }
