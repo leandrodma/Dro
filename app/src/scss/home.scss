@@ -30,7 +30,53 @@ main#home{
         color: #FFF;
         font-size: 5vw;
       }
-
     }
   }
+  section#lancamentos{
+    .row {
+      @include row-eq-height;
+      div{
+        @include no-padding;
+        text-align: center;
+        h3{
+          font-style: italic;
+          line-height: 18px;
+          color: $blue;
+          font-size: 18px;
+        }
+        &#lancamento{
+          background-color: $yellow;
+          color: $white;
+          text-align: center;
+
+          h1{
+            color: $blue;
+            font-size: 2em;
+            font-weight: bold;
+            margin: 20px;
+          }
+          img{
+            width: 70%;
+          }
+        }
+        .image-caption{
+            position: absolute;
+            text-align: center;
+            right: 15%;
+            left: 15%;
+            bottom: 5%;
+            background-color: $blue;
+            opacity: 0.9;
+            border: 1px solid darken($blue, 10%);
+            padding: 10px;
+            h2{
+              font-size: 1.5em;
+              font-weight: bold;
+            }
+        }
+      }
+    }
+
+  }
+
 }
