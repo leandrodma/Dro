@@ -8,6 +8,7 @@
 @import "quem-somos.scss";
 @import "cnc.scss";
 @import "como-comprar.scss";
+@import "personalize.scss";
 
 html,
 body {
@@ -94,4 +95,25 @@ body {
   }
   div:last-child{
   }
+}
+
+*::-webkit-input-placeholder {
+  color: $blue;
+}
+*:-moz-placeholder {
+  /* FF 4-18 */
+  color: $blue;
+}
+*::-moz-placeholder {
+  /* FF 19+ */
+  color: $blue;
+}
+*:-ms-input-placeholder {
+  /* IE 10+ */
+  color: $blue;
+}
+
+input, textarea {
+  border: none;
+  font-size: 16px;
 }

@@ -1,0 +1,63 @@
+#personalize {
+  color: $blue;
+  .col-xs-2-5 {
+    width: 20%;
+    float: left;
+  }
+  .yellow-bg {
+    background-color: $yellow;
+  }
+  .container {
+    padding-top: 30px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    text-align: center;
+    font-size: 16px;
+  }
+  input, textarea, select {
+    width: 100%;
+    color: $blue;
+    font-size: 16px;
+    margin: 5px 0;
+    padding: 5px 10px;
+  }
+  .prod-buttons {
+    margin-bottom: 10px;
+    span {
+      display: inline-block;
+      text-align: center;
+      background-color: transparent;
+      border: 1px solid $blue;
+      color: $blue;
+      width: 45%;
+      font-size: 16px;
+      &:first-child {
+        margin-right: 9%;
+      }
+      &.active {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+  }
+  a {
+    background-color: $blue;
+    color: $white;
+    padding: 5px;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    margin: 5px 0;
+    font-style: italic;
+  }
+  button.submit {
+    background-color: $yellow;
+    border: none;
+    margin: 5px auto;
+    font-size: 22px;
+    display: block;
+  }
+}
