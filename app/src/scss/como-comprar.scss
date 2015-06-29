@@ -1,0 +1,38 @@
+#como-comprar {
+  text-align: center;
+  h1, h2, p {
+    color: $blue;
+  }
+  h1 {
+    font-size: 62px;
+    margin: 20px 0 10px;
+  }
+  h2 {
+    font-size: 22px;
+    padding: 20px 0;
+    margin: 0;
+  }
+  a {
+    text-decoration: underline;
+    color: $blue;
+  }
+  .yellow {
+    background-color: $yellow;
+    a {
+      text-decoration: none;
+    }
+  }
+  .box {
+    background-color: $green;
+    height: 445px;
+    margin-bottom: 20px;
+    p {
+      font-size: 14px;
+      padding: 0 25px;
+      margin-bottom: 10px;
+    }
+    img {
+      margin: 10px 0 20px;
+    }
+  }
+}
