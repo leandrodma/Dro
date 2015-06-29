@@ -78,17 +78,31 @@ main#home{
     }
   } //./lancamentos
 
-  &#destaques{
+  section#destaques{
     .carousel{
-      .carousel-inner .active.left  { left: -33%;}
-      .carousel-inner .active.right { left: 33%;}
-      .carousel-inner .next         { left: 33% }
-      .carousel-inner .prev         { left: -33% }
+      .carousel-inner .active.left { left: -25%; }
+      .carousel-inner .next        { left:  25%; }
+      .carousel-inner .prev		     { left: -25%; }
+      .carousel-control 			     { width:  4%; }
+
       .item{
-        background: $grey;
+
+        div.col-xs-3{
+
+          @include row-eq-height;
+          background: $grey;
+          height: 433px;
+          min-height: 10em;
+          display: table-cell;
+          vertical-align: middle;
+
+          img{
+            position: absolute;
+          	top: 50%;
+          	transform: 			translateY(-50%);
+          }
+        }
       }
-
     }
-  }
-
+  } //./destaques
 }
