@@ -79,10 +79,18 @@ main#home{
   } //./lancamentos
 
   section#destaques{
+    text-align: center;
+    color: $blue;
     p, b{
-      font-size: 2em !important;
-      display: block;
+      font-size: 2em;
       color: $blue;
+    }
+
+    h1{
+      font-size: 3.2em;
+      b{
+        font-size:1.2em !important;
+      }
     }
 
     .carousel{
@@ -108,10 +116,12 @@ main#home{
           background: $grey;
           height: 433px;
 
-
           .carousel-caption{
             background-color: rgba(255, 255, 255, 0.8);
             top: 40%;
+            b{
+              display: block;
+            }
           }
         }
       }
