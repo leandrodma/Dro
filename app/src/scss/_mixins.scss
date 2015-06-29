@@ -10,3 +10,8 @@
   display: -ms-flexbox;
   display:         flex;
 }
+
+@mixin clearfix {
+  overflow: auto;
+  zoom: 1;
+}
