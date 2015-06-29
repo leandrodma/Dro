@@ -103,30 +103,32 @@
       </div><!-- /.carousel -->
 
       <section id="lancamentos">
-        <div class="row">
-          <div class="col-md-4 col-sm-12 ">
-            <img src="public/images/foto_blog.jpg" class="img-responsive" alt="">
-            <div class="image-caption">
-              <h2>donec a fermentum massa.</h2>
-              <p>
-                Suspendisse molestie risus vulputate ornare bibendum.
-                Curabitur scelerisque orci ac facilisis sollicitudin.
-                Cras ac neque augue.
-              </p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 col-lg-4">
+              <img src="public/images/foto_blog.jpg" class="img-responsive" alt="">
+              <div class="image-caption">
+                <h2>donec a fermentum massa.</h2>
+                <p>
+                  Suspendisse molestie risus vulputate ornare bibendum.
+                  Curabitur scelerisque orci ac facilisis sollicitudin.
+                  Cras ac neque augue.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-12" id="lancamento">
-            <h1>lançamento</h1>
-            <img src="public/images/produto-destaque.png"  alt="produto em destaque">
-            <a href=""><h3>veja mais</h3></a>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <img src="public/images/frete.jpg" class="img-responsive" alt="">
+            <div class=" col-md-12 col-lg-4" id="lancamento">
+              <h1>lançamento</h1>
+              <img src="public/images/produto-destaque.png"  alt="produto em destaque">
+              <a href=""><h3>veja mais</h3></a>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <img src="public/images/frete.jpg" class="img-responsive" alt="">
+            </div>
           </div>
         </div>
       </section><!-- /.Lancamentos -->
 
-      <section id="destaques">
+      <section id="destaques" class="hidden-xs">
           <h1><b>destaques</b> da loja</h1>
           <div id="destaques-carousel" class="carousel">
 
@@ -220,16 +222,16 @@
         </div>
         <div class="row">
           <div class="col-sm-12 col-md-3">
-            <img src="public/images/colecoes/5.jpg" alt="Coleção 2" class="img-responsive">
+            <img src="public/images/colecoes/5.jpg" alt="Coleção 5" class="img-responsive">
           </div>
           <div class="col-sm-12 col-md-3">
-            <img src="public/images/colecoes/6.jpg" alt="Coleção 2" class="img-responsive">
+            <img src="public/images/colecoes/6.jpg" alt="Coleção 6" class="img-responsive">
           </div>
           <div class="col-sm-12 col-md-3">
-            <img src="public/images/colecoes/7.jpg" alt="Coleção 2" class="img-responsive">
+            <img src="public/images/colecoes/7.jpg" alt="Coleção 7" class="img-responsive">
           </div>
           <div class="col-sm-12 col-md-3">
-            <img src="public/images/colecoes/8.jpg" alt="Coleção 2" class="img-responsive">
+            <img src="public/images/colecoes/8.jpg" alt="Coleção 9" class="img-responsive">
           </div>
         </div>
 
@@ -240,16 +242,58 @@
       <section id="cnc-personalize">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-sm-6">
-              <img src="public/images/cnc.jpg" class="img-reponsive" alt="CNC">
+            <div class="col-xs-12 col-md-6">
+              <img src="public/images/cnc.jpg" class="img-responsive" alt="CNC">
             </div>
-            <div class="col-sm-6">
-              <img src="public/images/personalize.jpg" class="img-reponsive" alt="Personalize">
+            <div class="col-xs-12 col-md-6">
+              <img src="public/images/personalize.jpg" class="img-responsive" alt="Personalize">
             </div>
           </div>
         </div>
       </section>
 
+      <section id="showroom" class="container-fluid">
+
+        <div class="caption">
+          <span>visite</span> <h1>nossa loja</h1>
+          <h2>Rua Canário, 447 - Moema. SP</h2>
+          <h3><i class="fa fa-phone"></i>11 2775-7497</h3>
+        </div>
+
+      </section>
+
+      <footer>
+        <ul>
+          <li ><a href="#newsletter" data-toggle="modal">Assine nossa Newsletter</a></li>
+          <li><a href="">Quem Somos</a></li>
+          <li><a href="">Contato</a></li>
+          <li><a href="">Como Comprar</a></li>
+          <li><a href="">Termos e Condições</a></li>
+        </ul>
+      </footer>
+
+      <div class="modal fade" id="newsletter" tabindex="-1" role="dialog" aria-labelledby="newsletter">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+
+              <form action="#" method="post">
+                <div class="form-group">
+                  <label for="email">
+                    <b>receba em primeira mão</b><br>
+                    nossos lançamentos e promoções
+                  </label>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <button type="submit" class="btn btn-default">Cadastrar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
 </body>
