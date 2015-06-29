@@ -32,6 +32,12 @@ main#home{
       }
     }
   }
+
+  hr{
+    border: 25px $yellow solid;
+    margin: 0;
+  }
+
   section#lancamentos{
     .row {
       @include row-eq-height;
@@ -146,7 +152,14 @@ main#home{
         @include no-padding;
       }
     }
+  }
 
+  section#cnc-personalize{
+    .row{
+      div{
+        @include no-padding;
+      }
+    }
   }
 
 }
