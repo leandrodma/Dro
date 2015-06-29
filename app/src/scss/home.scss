@@ -102,16 +102,13 @@ main#home{
       .item{
 
         div.col-xs-3{
-
           display: -webkit-flex;
           display:         flex;
-
           -webkit-align-items: center;
                   align-items: center;
 
           -webkit-justify-content: center;
                   justify-content: center;
-
 
           background: $grey;
           height: 433px;
@@ -127,4 +124,29 @@ main#home{
       }
     }
   } //./destaques
+
+  section#colecoes{
+    .title{
+      text-align: center;
+      padding: 5px 0;
+      width: 200px;
+      background-color: $blue;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      top: 40px;
+
+      h1{
+        font-size: 3.2em;
+        font-weight: bold;
+      }
+    }
+    .row{
+      div{
+        @include no-padding;
+      }
+    }
+
+  }
+
 }
