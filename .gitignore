@@ -1,2 +1,3 @@
 app/public/css/*
 app/public/scripts/*
+node_modules

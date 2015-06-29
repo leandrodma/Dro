@@ -1,0 +1,45 @@
+#cnc {
+  .img-banner {
+    background: url('../images/cnc/topo.jpg') no-repeat center center;
+    height: 710px;
+  }
+  .title {
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    h1 {
+      background-color: $blue;
+      color: $white;
+      display: inline-block;
+      padding: 0 10px 10px;
+      font-size: 46px;
+      margin: 0;
+    }
+  }
+  p {
+    font-size: 16px;
+    text-align: justify;
+    color: $blue;
+  }
+  .work {
+    background-color: $lightgray;
+    text-align: center;
+    padding: 20px 0;
+    p {
+      text-align: center;
+      &.button {
+        font-size: 16px;
+        border: 2px solid $blue;
+        padding: 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+}
+
