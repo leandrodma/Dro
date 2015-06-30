@@ -33,3 +33,13 @@ $('#destaques > .carousel .item').each(function(){
 });
 
 $('.equalize').equalize();
+
+$(document).ready(function(){
+    var personalize = $('.yellow-bg:first');
+    personalize.height(personalize.width()*0.927);
+});
+
+$(window).resize(function() {
+    var personalize = $('.yellow-bg:first');
+    personalize.height(personalize.width()*0.927);
+});
