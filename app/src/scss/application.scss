@@ -10,6 +10,7 @@
 @import "como-comprar.scss";
 @import "loja.scss";
 @import "personalize.scss";
+@import "produto.scss";
 
 html,
 body {
@@ -182,6 +183,14 @@ footer{
     }
   }
 
+}
+
+.btn{
+  background-color: $blue;
+  color: $white;
+  font-size: 1.5em;
+  font-weight: 100;
+  border-radius: 0;
 }
 
 *::-webkit-input-placeholder {

@@ -42,6 +42,9 @@ main#loja{
 
       ul{
         margin: 20px;
+        li{
+          display: inline-block;
+        }
       }
 
     }
@@ -70,4 +73,5 @@ main#loja{
       }
     }
   }
+
 }
