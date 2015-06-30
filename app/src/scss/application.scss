@@ -8,6 +8,7 @@
 @import "quem-somos.scss";
 @import "cnc.scss";
 @import "como-comprar.scss";
+@import "loja.scss";
 
 html,
 body {
@@ -94,4 +95,89 @@ body {
   }
   div:last-child{
   }
+}
+
+
+section#showroom{
+  background: url(../images/showroom.jpg) no-repeat top center;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  .caption{
+    position: relative;
+    color: $brown;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 8% auto;
+    text-align: center;
+    padding: 10px 30px;
+    span{
+      font-weight: bold;
+      font-size: 5em ;
+    }
+    h1{
+      font-size: 5em ;
+      display: inline;
+    }
+    h2{
+      font-size:2.5em;
+    }
+    h3{
+      font-size:1.8em;
+    }
+
+  }
+}
+
+footer{
+  background: $yellow;
+  text-align: center;
+  color: $brown;
+  padding: 15px;
+  ul{
+    li{
+      display:inline;
+      a:link,
+      a:visited,
+      a:hover,
+      a:active{
+        color: $brown;
+      }
+      &:not(:last-child):after{
+        content: ' / ';
+      }
+    }
+  }
+}
+
+.modal{
+  text-align: center;
+  .modal-dialog{
+    width: 400px;
+  }
+  .modal-content{
+    background-color: $yellow;
+    color: $blue;
+    border-radius: 0;
+    font-size:1.6em;
+    width: 400px;
+
+    modal-dialog {
+      width: 400px;
+      text-align: center;
+    }
+    b{
+      font-weight: bold;
+    }
+    .modal-header {
+      border-bottom: 1px solid darken($yellow, 5%);
+      .close {
+        margin-top: -10px;
+      }
+    }
+  }
+
 }
