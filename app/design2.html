@@ -1,109 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="agencia freela">
-    <meta name="Description" CONTENT="">
-    <!-- <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="/> -->
-    <title>Drom</title>
-    <meta name="robots" content="index,follow">
-    <!--<link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic' rel='stylesheet' type='text/css'>-->
-    <link rel="stylesheet" href="public/vendor/bootstrap/css/bootstrap.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,900,300italic,700italic' rel='stylesheet'
-          type='text/css'>
-    <link rel="stylesheet" href="public/css/application.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="agencia freela">
+  <meta name="Description" CONTENT="">
+  <!-- <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="/> -->
+  <title>Drom</title>
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="public/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/css/application.min.css">
 </head>
-<body>
 
-<main id="personalize">
+<body>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+        <span class="sr-only">Abrir menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="public/images/logo.png" alt="Drom" Title="Drom"></a>
+    </div>
+
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="loja.html">loja</a></li>
+        <li><a href="#about">categorias</a></li>
+        <li><a href="design.html">design</a></li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="#showroom">showroom</a></li>
+        <li class="dropdown" style="display: none" >
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Nav header</li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+
+
+      <div class="visible-lg" hidden>
+        <ul class="nav navbar-nav" id="cart">
+          <li><a href="#login">login (0) <span class="fa fa-shopping-cart"></span></a> </li>
+        </ul>
+        <ul class="nav navbar-nav" id="social">
+          <li><a href="//facebook.com"><span class="fa fa-facebook"></span></a></li>
+          <li><a href="//instagran"><span class="fa fa-instagram"></span></a></li>
+          <li><a href="//google.com"><span class="fa fa-google-plus"></span></a></li>
+          <li><a href="//pinterest.com"><span class="fa fa-pinterest"></span></a></li>
+          <li><a href="//foursquare.com"><span class="fa fa-foursquare"></span></a></li>
+        </ul>
+      </div>
+    </div><!--/.nav-collapse -->
+  </nav>
+
+  <main id="personalize">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-2-5">
-                <img class="img-responsive" src="public/images/personalize/1.jpg" alt=""/>
-            </div>
-            <div class="col-xs-2-5">
-                <img class="img-responsive" src="public/images/personalize/2.jpg" alt=""/>
-            </div>
-            <div class="col-xs-2-5">
-                <img class="img-responsive" src="public/images/personalize/3.jpg" alt=""/>
-            </div>
-            <div class="col-xs-2-5">
-                <img class="img-responsive" src="public/images/personalize/4.jpg" alt=""/>
-            </div>
-            <div class="col-xs-2-5">
-                <img class="img-responsive" src="public/images/personalize/5.jpg" alt=""/>
-            </div>
-            <div class="col-xs-2-5">
-                <img class="img-responsive" src="public/images/personalize/6.jpg" alt=""/>
-            </div>
-            <div class="col-xs-2-5 yellow-bg">
-                <h1><b>personalize</b> com estilo</h1>
-            </div>
-            <div class="col-xs-2-5">
-                <img class="img-responsive" src="public/images/personalize/7.jpg" alt=""/>
-            </div>
-            <div class="col-xs-2-5">
-                <img class="img-responsive" src="public/images/personalize/8.jpg" alt=""/>
-            </div>
-            <div class="col-xs-2-5">
-                <img class="img-responsive" src="public/images/personalize/9.jpg" alt=""/>
-            </div>
+      <div class="row">
+        <div class="col-xs-2-5">
+          <img class="img-responsive" src="public/images/personalize/1.jpg" alt=""/>
         </div>
+        <div class="col-xs-2-5">
+          <img class="img-responsive" src="public/images/personalize/2.jpg" alt=""/>
+        </div>
+        <div class="col-xs-2-5">
+          <img class="img-responsive" src="public/images/personalize/3.jpg" alt=""/>
+        </div>
+        <div class="col-xs-2-5">
+          <img class="img-responsive" src="public/images/personalize/4.jpg" alt=""/>
+        </div>
+        <div class="col-xs-2-5">
+          <img class="img-responsive" src="public/images/personalize/5.jpg" alt=""/>
+        </div>
+        <div class="col-xs-2-5">
+          <img class="img-responsive" src="public/images/personalize/6.jpg" alt=""/>
+        </div>
+        <div class="col-xs-2-5 yellow-bg">
+          <h1><b>personalize</b> com estilo</h1>
+        </div>
+        <div class="col-xs-2-5">
+          <img class="img-responsive" src="public/images/personalize/7.jpg" alt=""/>
+        </div>
+        <div class="col-xs-2-5">
+          <img class="img-responsive" src="public/images/personalize/8.jpg" alt=""/>
+        </div>
+        <div class="col-xs-2-5">
+          <img class="img-responsive" src="public/images/personalize/9.jpg" alt=""/>
+        </div>
+      </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-md-offset-2 col-md-8">
-                <p>Ao andar por aí procurando presentes que tenham a cara de um amigo, ou que possam expressar o amor de
-                    um relacionamento de 10 anos, por exemplo, dificilmente encontrávamos o que queríamos. Daí nasceu a
-                    necessidade de personalizar para ver a cara de surpresa de alguém que a gente gosta.
-                </p>
+      <div class="row">
+        <div class="col-xs-12 col-md-offset-2 col-md-8">
+          <p>Ao andar por aí procurando presentes que tenham a cara de um amigo, ou que possam expressar o amor de
+            um relacionamento de 10 anos, por exemplo, dificilmente encontrávamos o que queríamos. Daí nasceu a
+            necessidade de personalizar para ver a cara de surpresa de alguém que a gente gosta.
+          </p>
 
-                <p><b>Queremos que nossos clientes possam transformar qualquer produto em objetos de desejo.</b></p>
+          <p><b>Queremos que nossos clientes possam transformar qualquer produto em objetos de desejo.</b></p>
 
-                <p><b>Se você tem algum item e quer personalizá-lo ou deseja alguma de nossas peças e quer dar o seu
-                    toque é só preencher os campos abaixo que retornaremos com uma proposta e prazo.</b></p>
+          <p><b>Se você tem algum item e quer personalizá-lo ou deseja alguma de nossas peças e quer dar o seu
+            toque é só preencher os campos abaixo que retornaremos com uma proposta e prazo.</b></p>
 
-                <p style="font-size: 32px;text-align: center;letter-spacing: -7px;margin: -10px 0 0;">•••</p>
+            <p style="font-size: 32px;text-align: center;letter-spacing: -7px;margin: -10px 0 0;">•••</p>
 
-                <div class="col-md-offset-3 col-md-6">
-                    <form action="#">
-                        <input type="text" name="name" placeholder="Nome"/>
-                        <input type="email" name="email" placeholder="E-mail"/>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
+            <div class="col-md-offset-3 col-md-6">
+              <form action="#">
+                <input type="text" name="name" placeholder="Nome"/>
+                <input type="email" name="email" placeholder="E-mail"/>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
 
-                        <div class="prod-buttons">
-                            <span class="active" data-value="drom">É um produto <b>dröm</b></span>
-                            <span data-value="my">É um produto <b>meu</b></span>
-                            <input type="hidden" name="produto" value="drom"/>
-                        </div>
-                        <span>Produto que quer adquirir</span>
-                        <input class="codprod" type="text" name="codprod" placeholder="Insira o código do produto"/>
-                        <select name="personalizacao" id="personalizacao">
-                            <option value="" disabled selected>Tipo de personalização</option>
-                        </select>
-                        <input type="text" name="size" placeholder="Tamanho (em cm)"/>
-                        <div class="inputfile">
-                            <a href="#"><img src="public/images/personalize/attach.png" alt=""/> Anexe um desenho ou foto que gostaria inserir</a>
-                            <input type="file" name="file" id="file"/>
-                        </div>
-                        <button class="submit">enviar <b>:)</b></button>
-                    </form>
+                <div class="prod-buttons">
+                  <span class="active" data-value="drom">É um produto <b>dröm</b></span>
+                  <span data-value="my">É um produto <b>meu</b></span>
+                  <input type="hidden" name="produto" value="drom"/>
                 </div>
-                <div class="col-xs-12 col-md-offset-2 col-md-8">
-                    <p class="duvidas"><b>Em caso de dúvidas</b> ligue para a gente</p>
-
-                    <p class="telefone"><img src="public/images/personalize/fone.png" alt="Telefone: "/> 11 2775-7497</p>
+                <span>Produto que quer adquirir</span>
+                <input class="codprod" type="text" name="codprod" placeholder="Insira o código do produto"/>
+                <select name="personalizacao" id="personalizacao">
+                  <option value="" disabled selected>Tipo de personalização</option>
+                </select>
+                <input type="text" name="size" placeholder="Tamanho (em cm)"/>
+                <div class="inputfile">
+                  <a href="#"><img src="public/images/personalize/attach.png" alt=""/> Anexe um desenho ou foto que gostaria inserir</a>
+                  <input type="file" name="file" id="file"/>
                 </div>
+                <button class="submit">enviar <b>:)</b></button>
+              </form>
             </div>
+            <div class="col-xs-12 col-md-offset-2 col-md-8">
+              <p class="duvidas"><b>Em caso de dúvidas</b> ligue para a gente</p>
+
+              <p class="telefone"><img src="public/images/personalize/fone.png" alt="Telefone: "/> 11 2775-7497</p>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-</main>
+    </main>
 
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="public/scripts/application.min.js" charset="utf-8"></script>
-</html>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="public/scripts/application.min.js" charset="utf-8"></script>
+  </html>
